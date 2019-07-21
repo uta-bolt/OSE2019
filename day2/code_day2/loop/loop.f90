@@ -1,4 +1,4 @@
-!-----------------------------------------------------------------------
+example_gprof.exec!-----------------------------------------------------------------------
 !
 !     Program to demonstrate that loop ordering plays a role in Fortran
 !     
@@ -21,8 +21,8 @@
       
 !.....wrong loop ordering      
       call cpu_time(time_in)
-      do i = 1, N
-        do j = 1, N
+      do j = 1, N
+        do i = 1, N
           prod(i,j) = mult_A(i,j)*mult_B(i,j)
         end do
       end do

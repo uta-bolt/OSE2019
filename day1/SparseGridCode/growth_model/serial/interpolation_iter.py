@@ -51,7 +51,9 @@ def sparse_grid_iter(n_agents, iDepth, valold):
     f=open("grid_iter.txt", 'w')
     np.savetxt(f, aPoints, fmt='% 2.16f')
     f.close()
-    
-    return grid
-
+    #$print(v) #UB
+    #print(aPoints)
+    print(aPoints)
+    print(aVals)
+    return grid, aVals, aPoints
 #======================================================================

@@ -18,7 +18,7 @@ import nonlinear_solver_initial as solver
 
 def sparse_grid(n_agents, iDepth):
     
-    grid  = TasmanianSG.TasmanianSparseGrid()
+    grid  = TasmanianSG.TasmanianSparseGrid() #grid. calls all the tasmanian stuff!
 
     k_range=np.array([k_bar, k_up])
 

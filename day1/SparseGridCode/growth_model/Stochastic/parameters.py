@@ -14,7 +14,7 @@ import numpy as np
 #====================================================================== 
 
 # Depth of "Classical" Sparse grid
-iDepth=1
+iDepth=3
 iOut=1         # how many outputs
 which_basis = 1 #linear basis function (2: quadratic local basis)
 
@@ -29,7 +29,7 @@ No_samples = 1000
 
 # Model Paramters
 
-n_agents=2  # number of continuous dimensions of the model
+n_agents=1  # number of continuous dimensions of the model
 
 beta=0.8
 rho=0.95
@@ -54,9 +54,12 @@ l_up=1.0
 
 inv_bar=1e-2
 inv_up=10000.0
-
+theta_states=5
+prob_thetastate=np.array([0.2, 0.2, 0.2, 0.2,0.2])
+thetagrid=np.array([0.9, 0.95, 1, 1.05,1.1])
+#thetagrid=np.array([0.0001,5,10,15,20])
 #====================================================================== 
 
-
+inittheta=1
 
 
