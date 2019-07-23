@@ -1,0 +1,2 @@
+g++ helloworld.cpp -o hw.exe
+./hw.exe
